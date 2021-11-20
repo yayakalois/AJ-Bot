@@ -1,2 +1,3 @@
+Hallo, das ist mein erstes Projekt es ist ein Python Projekt also ihr braucht Python für verbesserungs vorschläge einfach mir eine E-Mail schraiben:)
 
-Hi , ich bin AJ und habe einen bot erstellt der mit dir schriftlich redet. Viel Spaß damit :)
+Python Downloaden https://www.python.org/downloads
