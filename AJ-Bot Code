@@ -1,0 +1,48 @@
+# -*- coding: utf-8 -*-
+import random
+
+zufallsantworten = ["???", "Das weiß ich leider nicht", "Schreibe mir eine E-Mail über dein Problem",]
+
+reaktionsantworten = {"hallo": " Hallo wie geht es dir?",
+                      "gut": "Mir auch :)",
+                      "schlecht": "Oh nein was ist den los:(",
+                      "alt": "Ich bin 100 Jahre",
+                      "wetter":  "Es sind heute 9°C ",
+                      "hi": "Hi, wie gehts dir?",
+                      "hey": "Hey, wie geht es dir heute?",
+                      "heiraten": "Ich bin leider schon Verheiratet :)",
+                      "cool": "COOL",
+
+
+
+
+                      }
+
+print("Willkommen beim AJ_Bot")
+print("Worüber würdest  du gerne heute sprechen?")
+print("Zum beenden einfach 'end' eintippen")
+print("Schreibe alles klein bitte :)")
+
+nutzereingabe = ""
+while nutzereingabe != "end":
+    nutzereingabe = ""
+    while nutzereingabe == "":
+
+        nutzereingabe = input("Deine Frage/Antwort: ")
+
+
+
+    nutzereingabe = nutzereingabe.lower()
+    nutzerwoerter = nutzereingabe.split()
+
+    intelligenteAntworten = False
+    for einzelwoerter in nutzerwoerter:
+        if einzelwoerter in reaktionsantworten:
+            print(reaktionsantworten[einzelwoerter])
+            intelligenteAntworten = True
+    if intelligenteAntworten == False:
+        print(random.choice(zufallsantworten))
+
+    print("")
+
+print("Einen schönen Tag wünsche ich dir. Bis zum nächsten mal:)")
